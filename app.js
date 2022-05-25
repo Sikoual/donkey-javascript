@@ -1,4 +1,4 @@
-const notes = [22,295,176,440,37,105,10,1100,86,52];
+const notes = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips = [];
 const result = [];
 
@@ -9,14 +9,14 @@ const calcTip = (amount) => {
 }
 
 const calcAverage = (array) => {
-	return array.reduce((total,acc) => total + acc, 0) / array.length;
+	return array.reduce((total, acc) => total + acc, 0) / array.length;
 }
 for (let amount of notes) {
 	tips.push(calcTip(amount))
 }
 
-for(let i = 0 ; i < notes.length ; i++){
-	result.push([tips[i],notes[i]])
+for (let i = 0; i < notes.length; i++) {
+	result.push([tips[i], notes[i]])
 }
 
 console.log(result);
